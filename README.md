@@ -13,5 +13,5 @@ Add it in your root build.gradle at the end of repositories:
 Step 2. Add the dependency
 
 	dependencies {
-	        compile 'com.github.ForgetAll:zoomimageview:2457cea273'
+	        compile 'com.github.ForgetAll:zoomimageview:v1.0'
 	}
