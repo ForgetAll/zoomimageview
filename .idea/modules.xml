@@ -4,7 +4,9 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/MyApplication.iml" filepath="$PROJECT_DIR$/MyApplication.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/zoomimageview.iml" filepath="$PROJECT_DIR$/zoomimageview.iml" />
       <module fileurl="file://$PROJECT_DIR$/zoomimageview/zoomimageview.iml" filepath="$PROJECT_DIR$/zoomimageview/zoomimageview.iml" />
+      <module fileurl="file://$PROJECT_DIR$/zoomimageview/zoomimageview-zoomimageview.iml" filepath="$PROJECT_DIR$/zoomimageview/zoomimageview-zoomimageview.iml" />
     </modules>
   </component>
 </project>

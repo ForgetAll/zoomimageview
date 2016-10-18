@@ -234,7 +234,7 @@ public class ZoomImageView extends ImageView implements View.OnTouchListener, Sc
 
         float scale = 1.0f;
 
-        //如果图片的宽或高大于屏幕，缩放至屏幕的宽或者高
+        //如果图片的宽或高大于屏幕，所放置屏幕的宽
         if (imgWidth > width && imgHeight <= height)
             scale = (float) width / imgWidth;
         if (imgHeight > height && imgWidth <= width)

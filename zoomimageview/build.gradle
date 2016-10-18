@@ -27,8 +27,9 @@ dependencies {
     compile 'com.android.support:appcompat-v7:23.2.0'
 }
 
-group = "com.xiasuhuei321.zoomimageview" // Maven Group ID for the artifact，一般填你唯一的包名
-
+def siteUrl = 'https://github.com/ForgetAll/zoomimageview'
+def gitUrl = 'https://github.com/ForgetAll/zoomimageview.git'
+group = "com.xiasuhuei321.zooimageview"
 install {
 
     repositories.mavenInstaller {
@@ -36,9 +37,7 @@ install {
 // This generates POM.xml with proper parameters
 
         pom {
-
             project {
-
                 packaging 'aar'
 
 // Add your description here
@@ -62,25 +61,17 @@ install {
                 developers {
 
                     developer {
-
-                        id 'H3c' //填写的一些基本信息
-
-                        name 'H3c'
-
-                        email 'h3clikejava@gmail.com'
-
+                        id 'xiasuhuei321' //填写的一些基本信息
+                        name 'luo'
+                        email 'xiasuhuei321@163.com'
                     }
 
                 }
 
                 scm {
-
                     connection gitUrl
-
                     developerConnection gitUrl
-
                     url siteUrl
-
                 }
 
             }
@@ -100,7 +91,6 @@ task sourcesJar(type: Jar) {
 }
 
 task javadoc(type: Javadoc) {
-
     source = android.sourceSets.main.java.srcDirs
 
     classpath += project.files(android.getBootClasspath().join(File.pathSeparator))
@@ -139,7 +129,7 @@ bintray {
 
         repo = "maven"
 
-        name = "extend-imageview" //发布到JCenter上的项目名字
+        name = "zoomimageview" //发布到JCenter上的项目名字
 
         websiteUrl = siteUrl
 
@@ -151,4 +141,11 @@ bintray {
 
     }
 
+}
+
+javadoc {
+    options{
+        encoding "UTF-8"
+        charSet 'UTF-8'
+    }
 }
